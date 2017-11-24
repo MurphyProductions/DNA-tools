@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Genetics tools</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div id="main_container">
+            
+            <h1>Please, paste the sequence (either DNA or RNA) you want to analyze in the box below: </h1>
+            <div id="sequence_box">
+                <textarea id="sequence" class="sequence_box" placeholder="Paste your sequence"></textarea>
+            </div>
+            <div id="checker">
+                <h1>Although not mandatory, I encourage you to check if your sequence is valid. Be aware that, although you can paste either a DNA or a RNA sequence, some of the analyses are type-selective.
+                To check whether your sequence is valid, click the button below.</h1>
+                <div class="button">
+                    <input type="button" value="Check sequence" id="sequence_check" class="buttons checkseq_btn_clear">
+                    <input type="button" value="Clear all fields" id="clear_all">
+                </div>
+                <div id="check_result" class="good clearable">
+                    <span id="typeSeq" class="clearable typeseq_clear"></span>
+                </div>
+                <div id="check_error" class="errors clearable typeseq_clear">
+                </div>
+            </div>
+
+            <div id="results_frame">
+                <div id="count" class="menu">
+                    <span id="span"><a href="#">Count bases</a></span>
+                </div>
+            <!-- BASE COUNTER -->
+                <div id="counter" class="hidden">
+                    <h1>This function will count each base and the total number of bases of your sequence.
+                    It will also calculate the percentage of each base.</h1>
+                    <div class="button">
+                        <input type="button" value="Count Bases" id="bc_button" class="buttons clear_count_btn">
+                    </div>
+                    <div id="count_error" class="errors clearable count_clear">
+
+                    </div>  
+                    <table id="bc_results">
+                        <tr class="table_title">
+                            <td>Base</td>
+                            <td>Count</td>
+                            <td>Percentage</td>
+                        </tr>        
+                        <tr>
+                            <td>Adenine</td><td id="A" class="results clearable count_clear"></td>
+                            <td><span id="perc_A" class="results clearable count_clear"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Thymine</td><td id="T" class="results clearable count_clear"></td>
+                            <td><span id="perc_T" class="results clearable count_clear"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Cytosine</td><td id="C" class="results clearable count_clear"></td>
+                            <td><span id="perc_C" class="results clearable count_clear"></span></td>
+                        <tr>
+                        <tr>
+                            <td>Guanine</td><td id="G" class="results clearable count_clear"></td>
+                            <td><span id="perc_G" class="results clearable count_clear"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Uracyl</td><td id="U" class="results clearable count_clear"></td>
+                            <td><span id="perc_U" class="results clearable count_clear"></span></td>
+                        </tr>    
+                        <tr>
+                            <td>Total</td><td id="N" class="results clearable count_clear"></td>
+                            <td><span id="perc_N" class="results clearable count_clear"></span></td>
+                        </tr>
+                    </table>      
+                </div>
+           
+            
+            
+    </body>
+</html>
