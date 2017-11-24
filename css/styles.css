@@ -1,0 +1,205 @@
+/* LABELS */
+html {
+background-image: url('/home/nate/Desktop/bioinformatics-master/assets/snow.gif');
+background-size: cover;
+}
+body {
+    margin: 1;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    color: darkblue;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    height: 10vmax;
+}
+h1 {
+     color: red;
+     font-size: 20px;
+}
+
+p1 {
+     color: red;
+     font-size: 20px;
+}
+td {
+     color: white;
+     font-size: 20px;
+}
+footer {
+    font-family: Stalemate;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+}
+
+ul { 
+    text-align: left;
+}
+
+textarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+/* MAIN CONTAINER (ALL PAGE EXCEPT HEADER AND FOOTER) */
+#main_container {
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 30px 0;
+}
+
+#div.main_container>div {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/* SEQUENCE BOXES */
+
+#sequence_box {
+    text-align: center;
+    margin: 30px;
+}
+
+#ss {
+    width: 30%;
+    height: 75px;
+}
+
+#highlighted_seq {
+    width: 75%;
+    word-wrap: break-word;
+}
+
+#position {
+    display: inline-flex;
+    width: 75%;
+    height: auto;
+}
+
+/* MENU AND LISTS */
+
+
+
+.menu {
+    width: 100%;
+    line-height: 0.5em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+    font-size: 25px;
+    border-bottom: 2.5px solid darkblue;
+    margin-bottom: 20px;
+}
+
+.menu span {
+    background-color:#ffffff; 
+    padding: 0 15px; 
+}
+
+/* INPUT TYPE STYLES*/
+
+input[type="button"] {
+    background-color: #b3b3ff;
+    font-size: 13px;
+    font-family: sans-serif;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.button {
+    text-align: center;
+}
+
+input[type="text"] {
+    background-color:#F0F8FF;
+    margin: 0;
+}
+
+.sequence_box {
+    width: 50%;
+    height: 100px;
+    color: #3300CC;
+    padding: 0;
+}
+
+/* HIGHLIGHTED AND IMPORTANT MESSAGES */
+.important {
+    color: red;
+}
+
+#highlight {
+    background: yellow;
+}
+
+.hl {
+    color: red;
+}
+
+/* TABLES */
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    text-align: center;
+}
+
+.table_title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.table_title>td {
+    padding: 5px 10px;
+    border-bottom: 2px solid black;
+}
+
+#rnatrans_results>td {
+    padding: 10px;
+}
+
+/*  RESULTS AND ANALYSES */
+
+.errors {
+    text-align: center;
+    font-size: 18px;
+    color: #FF0000;
+}
+
+.good {
+    text-align: center;
+    color: #228B22;
+    font-size: 18px;
+}
+    
+
+
+
+
