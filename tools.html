@@ -72,6 +72,101 @@
                         </tr>
                     </table>      
                 </div>
+                 <!-- SUBSEQUENCE FINDER -->
+                <div id="subseq" class="menu">
+                    <span><a href="#">Look for a sub-sequence</a></span>
+                </div>    
+                <div id="subsequence" class="hidden">
+                    <h1>To search whether a sub-sequence inside your sequence, insert the sub-sequence you want to look for below. At this moment, this function will only return the first occurrence of the sub-sequence.</h1>
+                    <br>
+                    <h1>Now this function will return ALL the occurences of the sub-sequence.</h1>
+                    <div class="text_area">
+                        <textarea id="ss" class="sequence_box clearable" placeholder="Please, paste your subsequence here"></textarea>
+                    </div>    
+                    <div class="button">    
+                        <input type="button" value="Search" id="subseq_button" class="buttons ss_btn_clear">
+                    </div>
+                    <div id= "ss_error" class="errors clearable subseq_clear">
+
+                    </div>    
+                    <div id="position_result">
+                        <h1>Position(s) of the sub-sequence(s):</h1> <textarea id="position" class="results clearable subseq_clear" placeholder="Position(s)" readonly></textarea>
+                        <div>
+                            <h1>Number of repetitions:</h1> <span id="repetitions" class="results clearable subseq_clear"></span>
+                        </div>
+                        <div>
+                            <h1>Sub-sequence(s) highlighted:</h1> <span id="highlighted_seq" class="results clearable subseq_clear adjusted_width"></span>
+                        </div>
+                    </div>
+                </div>  
+            <!-- COMPLEMENTARY SEQUENCE -->      
+                <div id="compl" class="menu">
+                    <span><a href="#">Complementary sequence</a></span>
+                </div>    
+                <div id="complementary_seq">
+                    <h1>With this tool you can automatically get the complementary sequence of your DNA chain. Be aware that this functionallity
+                    will not work work with messenger RNA sequences, as mRNA is single-stranded. To get the complementary sequence, please, click the button below:</h1>
+                    <div class="button">
+                        <input type="button" value="Get Complementary Sequence" id="compl_button" class="buttons compl_btn_clear">
+                    </div>
+                    <div id="compl_seq">
+                        <div id="compl_error" class="errors clearable"></div>
+                        <textarea id="compl_result" class="sequence_box clearable" placeholder="Your complementary sequence will appear here" readonly></textarea>
+                    </div>    
+                </div>
+            <!-- TRANSLATE TO RNA OR DNA -->    
+                <div class="menu">
+                        <span><a href="#">Translation services</a></span>
+                    </div>  
+                    <div id="rna_translate">  
+                        <h1>This functionality will allow you to obtain your sequence as a DNA or RNA chains. It will automatically detect what kind
+                        of sequence you pasted and convert it to the other type. Try it clicking the button below.</h1>
+                        <div class="button">
+                            <input type="button" value="Convert sequence!" id="conv_button" class="buttons transl_btn_clear">
+                        </div>
+                        <div id="seq_type" class="results">
+                            <span id="primary_seq" class="results clearable translate_clear"></span><span id="sequence_type" class="results clearable"></span><span id="converted_Seq" class="results clearable"></span><span id="conv_type clearable" class="results clearable"></span>
+                        </div>    
+                        <div id="conv_error" class="errors clearable translate_clear">
+                        </div>
+                        <textarea id="rna_seq" class="sequence_box clearable translate_clear" placeholder="Your translated sequence will appear here" readonly></textarea>    
+                    </div>      
+                </div>
+            
+                
+                    
+        </div>
+    </div>
+
+           
+            
+            
+    </body>
+</html>
+                            <td><span id="perc_A" class="results clearable count_clear"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Thymine</td><td id="T" class="results clearable count_clear"></td>
+                            <td><span id="perc_T" class="results clearable count_clear"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Cytosine</td><td id="C" class="results clearable count_clear"></td>
+                            <td><span id="perc_C" class="results clearable count_clear"></span></td>
+                        <tr>
+                        <tr>
+                            <td>Guanine</td><td id="G" class="results clearable count_clear"></td>
+                            <td><span id="perc_G" class="results clearable count_clear"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Uracyl</td><td id="U" class="results clearable count_clear"></td>
+                            <td><span id="perc_U" class="results clearable count_clear"></span></td>
+                        </tr>    
+                        <tr>
+                            <td>Total</td><td id="N" class="results clearable count_clear"></td>
+                            <td><span id="perc_N" class="results clearable count_clear"></span></td>
+                        </tr>
+                    </table>      
+                </div>
            
             
             
